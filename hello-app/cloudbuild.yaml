@@ -46,13 +46,6 @@ steps:
     - '.'
   dir: 'hello-app'
 
-# Push images.
-images:
-  - 'gcr.io/piyushgaur/hello-app:1.0'
-  - 'us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0'
-  - 'gcr.io/piyushgaur/hello-app:2.0'
-  - 'us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0'
-  
 # deploy container image to GKE.
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
@@ -61,3 +54,12 @@ images:
   - --image=gcr.io/piyushgaur/hello-app:1.0
   - --location=us-central1-c
   - --cluster=cluster-khi
+
+# Push images.
+images:
+  - 'gcr.io/piyushgaur/hello-app:1.0'
+  - 'us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0'
+  - 'gcr.io/piyushgaur/hello-app:2.0'
+  - 'us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0'
+  
+
