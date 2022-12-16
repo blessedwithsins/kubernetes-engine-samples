@@ -53,7 +53,7 @@ images:
   - 'gcr.io/piyushgaur/hello-app:2.0'
   - 'us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0'
   
-# deploy container image to GKE
+# deploy container image to GKE.
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
   - run
