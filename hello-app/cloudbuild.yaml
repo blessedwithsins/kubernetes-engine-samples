@@ -51,7 +51,7 @@ steps:
   args:
   - run
   - --filename=hello-app/manifests/helloweb-deployment.yaml
-  - --image=gcr.io/piyushgaur/hello-app:1.0
+  - --image=docker pull gcr.io/piyushgaur/github.com/blessedwithsins/kubernetes-engine-samples@sha256:0880970296ea9a52575cf3e0fcf52a9ffd92ee8cebf8c41b27f61ed6f83cd38b
   - --location=us-central1-c
   - --cluster=cluster-khi
 
